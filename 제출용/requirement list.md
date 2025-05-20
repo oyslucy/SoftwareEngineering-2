@@ -1,4 +1,5 @@
 ### 공개용 개인코드 : 30914
+### github 주소 : https://github.com/oyslucy/SoftwareEngineering-2
 
 | No. | Requirement | Usecase |
 | --- | --- | --- |
