@@ -1,7 +1,7 @@
 #ifndef USER_H
 #define USER_H
 
-# include "../Bicycle/Bicycle.h"
+# include "Bicycle.h"
 #include <string>
 #include <vector>
 #include <tuple>

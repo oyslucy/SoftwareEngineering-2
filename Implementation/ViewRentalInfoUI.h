@@ -1,7 +1,7 @@
 #ifndef RENTED_BICYCLE_INFO_UI_H
 # define RENTED_BICYCLE_INFO_UI_H
 
-#include "../../control/ViewRentalInfo/ViewRentalInfo.h"
+#include "ViewRentalInfo.h"
 #include <fstream>
 #include <string>
 #include <sstream>

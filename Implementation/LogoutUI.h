@@ -1,7 +1,7 @@
 #ifndef LOGOUT_UI_H
 #define LOGOUT_UI_H
 
-#include "../../control/Logout/Logout.h"
+#include "Logout.h"
 #include <fstream>
 #include <string>
 #include <sstream>

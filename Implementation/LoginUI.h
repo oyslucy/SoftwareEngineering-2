@@ -1,7 +1,7 @@
 #ifndef LOGIN_UI_H
 #define LOGIN_UI_H
 
-#include "../../control/Login/Login.h"
+#include "Login.h"
 #include <fstream>
 #include <string>
 #include <sstream>

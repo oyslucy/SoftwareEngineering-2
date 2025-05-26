@@ -1,7 +1,7 @@
 #ifndef RENTAL_BICYCLE_UI_H
 #define RENTAL_BICYCLE_UI_H
 
-#include "../../control/RentalBicycle/RentalBicycle.h"
+#include "RentalBicycle.h"
 #include <fstream>
 #include <string>
 #include <sstream>

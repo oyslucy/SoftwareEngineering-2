@@ -1,7 +1,7 @@
 #ifndef REGISTER_BICYCLE_UI_H
 #define REGISTER_BICYCLE_UI_H
 
-#include "../../control/RegisterBicycle/RegisterBicycle.h"
+#include "RegisterBicycle.h"
 #include <fstream>
 #include <string>
 #include <sstream>

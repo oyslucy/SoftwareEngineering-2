@@ -8,24 +8,26 @@
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-#include "./boundary/SignUpUI/SignUpUI.h"
-#include "./boundary/LoginUI/LoginUI.h"
-#include "./boundary/LogoutUI/LogoutUI.h"
-#include "./boundary/RegisterBicycleUI/RegisterBicycleUI.h"
-#include "./boundary/RentalBicycleUI/RentalBicycleUI.h"
-#include "./boundary/ViewRentalInfoUI/ViewRentalInfoUI.h"
+#include "SignUpUI.h"
+#include "LoginUI.h"
+#include "LogoutUI.h"
+#include "RegisterBicycleUI.h"
+#include "RentalBicycleUI.h"
+#include "ViewRentalInfoUI.h"
+#include "ExitUI.h"
 
-#include "./control/SignUp/SignUp.h"
-#include "./control/Login/Login.h"
-#include "./control/Logout/Logout.h"
-#include "./control/RegisterBicycle/RegisterBicycle.h"
-#include "./control/RentalBicycle/RentalBicycle.h"
-#include "./control/ViewRentalInfo/ViewRentalInfo.h"
+#include "SignUp.h"
+#include "Login.h"
+#include "Logout.h"
+#include "RegisterBicycle.h"
+#include "RentalBicycle.h"
+#include "ViewRentalInfo.h"
+#include "Exit.h"
 
-#include "./entity/Bicycle/Bicycle.h"
-#include "./entity/BicycleCollection/BicycleCollection.h"
-#include "./entity/User/User.h"
-#include "./entity/UserCollection/UserCollection.h"
+#include "Bicycle.h"
+#include "BicycleCollection.h"
+#include "User.h"
+#include "UserCollection.h"
 
 using namespace std;
 
@@ -67,6 +69,7 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
     RegisterBicycleUI registerBicycleUI(registerBicycle);
     RentalBicycleUI rentalBicycleUI(rentalBicycle);
     ViewRentalInfoUI viewRentalInfoUI(ViewRentalInfo);
+    ExitUI exitUI;
 
     // init
     userCollection.addUser("admin", "admin");
@@ -122,7 +125,7 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
             case 6:
                 switch(menu_level_2) {
                     case 1: // 6.1. 종료
-                        out_fp << "6.1. 종료";
+                        exitUI.exitProgram(out_fp);                  
                         is_program_exit = 1;
                         break; 
                 }

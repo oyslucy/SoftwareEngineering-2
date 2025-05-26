@@ -1,8 +1,8 @@
 #ifndef VIEW_RENTAL_INFO_H
 #define VIEW_RENTAL_INFO_H
 
-#include "../../entity/UserCollection/UserCollection.h"
-#include "../../entity/Bicycle/Bicycle.h"
+#include "UserCollection.h"
+#include "Bicycle.h"
 #include <string>
 using namespace std;
 

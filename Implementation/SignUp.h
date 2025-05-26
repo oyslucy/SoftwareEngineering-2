@@ -1,8 +1,8 @@
 #ifndef SIGNUP_H
 #define SIGNUP_H
 
-#include "../../entity/User/User.h"
-#include "../../entity/UserCollection/UserCollection.h"
+#include "User.h"
+#include "UserCollection.h"
 #include <string>
 using namespace std;
 

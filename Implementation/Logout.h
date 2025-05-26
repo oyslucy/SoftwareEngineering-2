@@ -1,7 +1,7 @@
 #ifndef LOGOUT_H
 #define LOGOUT_H
 
-#include "../../entity/UserCollection/UserCollection.h"
+#include "UserCollection.h"
 
 class Logout {
 public:

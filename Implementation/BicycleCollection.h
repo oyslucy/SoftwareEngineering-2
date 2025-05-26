@@ -1,7 +1,7 @@
 #ifndef BICYCLE_COLLECTION_H
 # define BICYCLE_COLLECTION_H
 
-# include "../Bicycle/Bicycle.h"
+# include "Bicycle.h"
 # include <string>
 # include <vector>
 using namespace std;

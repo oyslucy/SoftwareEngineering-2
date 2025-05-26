@@ -1,5 +1,5 @@
 #include "RegisterBicycle.h"
-#include "../../entity/UserCollection/UserCollection.h"
+#include "UserCollection.h"
 
 /**
  * @brief 현재 로그인된 사용자가 관리자일 경우 자전거 정보를 등록하고 등록 결과 반환

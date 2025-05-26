@@ -1,4 +1,4 @@
-#include "../SignUp/SignUp.h"
+#include "SignUp.h"
 
 /**
  * @brief 전달받은 정보를 바탕으로 새로운 일반 사용자 등록 후 등록 정보 반환

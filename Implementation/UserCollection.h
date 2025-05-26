@@ -1,7 +1,7 @@
 #ifndef User_COLLECTION_H
 #define User_COLLECTION_H
 
-#include "../User/User.h"
+#include "User.h"
 #include <string>
 #include <vector>
 

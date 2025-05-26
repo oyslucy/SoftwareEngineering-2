@@ -1,7 +1,7 @@
 #ifndef SIGNUP_UI_H
 #define SIGNUP_UI_H
 
-#include "../../control/SignUp/SignUp.h"
+#include "SignUp.h"
 #include <tuple>
 #include <iostream>
 #include <fstream>

@@ -1,4 +1,4 @@
-#include "./User.h"
+#include "User.h"
 
 /**
  * @brief 일반 사용자용 생성자 ID 비밀번호 전화번호를 설정하고 기본 역할을 Member로 지정

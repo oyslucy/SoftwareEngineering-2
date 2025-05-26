@@ -1,7 +1,7 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
-#include "../../entity/UserCollection/UserCollection.h"
+#include "UserCollection.h"
 #include <string>
 #include <vector>
 #include <utility>
