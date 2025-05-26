@@ -8,6 +8,15 @@
 LogoutUI::LogoutUI(Logout& logout) : _logout(logout) {}
 
 /**
+ * @brief 로그아웃 시작 인터페이스 메시지 출력
+ * 
+ * @param out_fp 로그아웃 시작을 알리는 메시지를 출력할 스트림
+ */
+void LogoutUI::startInterface(ofstream& out_fp) {
+    out_fp << "2.2. 로그아웃\n";
+}
+
+/**
  * @brief 현재 로그인된 사용자를 로그아웃 처리하고 결과 출력
  * 
  * @param out_fp 로그아웃 결과를 출력할 스트림
@@ -16,7 +25,6 @@ LogoutUI::LogoutUI(Logout& logout) : _logout(logout) {}
 void LogoutUI::logoutRequest(ofstream& out_fp, UserCollection& userCollection) {
     string logoutUserDetail = _logout.logout(userCollection);
     if (!logoutUserDetail.empty()) {
-        out_fp << "2.2. 로그아웃\n";
         out_fp << "> " << logoutUserDetail << "\n\n"; 
     }
 }

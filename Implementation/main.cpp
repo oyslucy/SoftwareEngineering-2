@@ -78,6 +78,7 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
             case 1:
                 switch(menu_level_2) {
                     case 1: // 1.1. 회원가입 > [ID] [PW] [PN]
+                        signupUI.startInterface(out_fp);
                         signupUI.inputInformation(in_fp, out_fp, userCollection);
                         break;
                 } break;
@@ -85,9 +86,11 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
             case 2:
                 switch(menu_level_2) {
                     case 1: // 2.1. 로그인 > [ID] [PW]
+                        loginUI.startInterface(out_fp);
                         loginUI.inputInformation(in_fp, out_fp, userCollection);
                         break ;
                     case 2: // 2.2. 로그아웃 > [ID]
+                        logoutUI.startInterface(out_fp);
                         logoutUI.logoutRequest(out_fp, userCollection);
                         break;
                 } break;
@@ -95,6 +98,7 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
             case 3:
                 switch(menu_level_2) {
                     case 1:  // 3.1. 자전거 등록 > [ID] [name]
+                        registerBicycleUI.startInterface(out_fp);
                         registerBicycleUI.inputBicycleInformation(in_fp, out_fp, userCollection, bicycleCollection);
                         break;
                 } break;
@@ -102,6 +106,7 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
             case 4:
                 switch(menu_level_2) {
                     case 1: // 4.1. 자전거 대여 > [ID]
+                        rentalBicycleUI.startInterface(out_fp);
                         rentalBicycleUI.rentalRequest(in_fp, out_fp, userCollection, bicycleCollection);
                         break;
                 } break;
@@ -109,6 +114,7 @@ void doTask(ifstream& in_fp, ofstream& out_fp) {
             case 5:
                 switch(menu_level_2) {
                     case 1: // 5.1. 자전거 대여 리스트 {> [ID] [name]}*
+                        viewRentalInfoUI.startInterface(out_fp);
                         viewRentalInfoUI.requestViewRentalInfo(out_fp, userCollection);
                         break;
                 } break;

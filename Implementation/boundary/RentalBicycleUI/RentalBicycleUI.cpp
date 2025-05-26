@@ -8,6 +8,15 @@
 RentalBicycleUI::RentalBicycleUI(RentalBicycle& rentalBicycle): _rentalBicycle(rentalBicycle) {}
 
 /**
+ * @brief 자전거 대여 시작 인터페이스 메시지 출력
+ * 
+ * @param out_fp 자전거 대여 시작을 알리는 메시지를 출력할 스트림
+ */
+void RentalBicycleUI::startInterface(ofstream& out_fp) {
+    out_fp << "4.1. 자전거 대여\n";
+}
+
+/**
  * @brief 자전거 대여 요청을 처리하고 결과 출력
  * 
  * @param in_fp 자전거 ID를 입력받는 입력 스트림
@@ -22,7 +31,6 @@ void RentalBicycleUI::rentalRequest(ifstream& in_fp, ofstream& out_fp, UserColle
     pair<string, string> rentalBicycleInformation = _rentalBicycle.rentalBicycle(id, userCollection, bicycleCollection);
 
     if(!rentalBicycleInformation.first.empty() && !rentalBicycleInformation.first.empty()) {
-        out_fp << "4.1. 자전거 대여\n";
         out_fp << "> " << rentalBicycleInformation.first << " " << rentalBicycleInformation.second << "\n\n";
     }
 }

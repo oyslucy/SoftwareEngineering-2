@@ -12,6 +12,9 @@ private:
 
 public:
     RentalBicycleUI(RentalBicycle& rentalBicycle);
+
+    void startInterface(ofstream& out_fp);
+
     void rentalRequest(ifstream& in_fp, ofstream& out_fp, UserCollection& userCollection, BicycleCollection& bicycleCollection);
 };
 

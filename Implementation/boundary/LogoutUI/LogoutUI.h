@@ -13,6 +13,9 @@ private:
 
 public:
     LogoutUI(Logout& logout);
+
+    void startInterface(ofstream& out_fp);
+
     void logoutRequest(ofstream& out_fp, UserCollection& userCollection);
 };
 

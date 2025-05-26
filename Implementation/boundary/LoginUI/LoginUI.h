@@ -13,6 +13,9 @@ private:
 
 public:
     LoginUI(Login& login);
+
+    void startInterface(ofstream& out_fp);
+
     void inputInformation(ifstream& in_fp, ofstream& out_fp, UserCollection& userCollection);
 };
 

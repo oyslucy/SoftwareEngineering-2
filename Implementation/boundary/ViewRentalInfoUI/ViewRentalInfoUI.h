@@ -14,6 +14,9 @@ private:
 
 public:
     ViewRentalInfoUI(ViewRentalInfo& viewRentalInfo);
+
+    void startInterface(ofstream& out_fp);
+
     void requestViewRentalInfo(ofstream& out_fp, UserCollection& userCollection);
 };
 

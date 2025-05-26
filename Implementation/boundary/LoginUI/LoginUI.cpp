@@ -8,6 +8,15 @@
 LoginUI::LoginUI(Login& login) : _login(login) {}
 
 /**
+ * @brief 로그인 시작 인터페이스 메시지 출력
+ * 
+ * @param out_fp 로그인 시작을 알리는 메시지를 출력할 스트림
+ */
+void LoginUI::startInterface(ofstream& out_fp) {
+    out_fp << "2.1. 로그인\n";
+}
+
+/**
  * @brief 로그인 정보를 입력받고 로그인 결과 출력
  * 
  * @param in_fp     사용자 입력 스트림 (로그인 ID, 비밀번호)
@@ -21,6 +30,5 @@ void LoginUI::inputInformation(ifstream& in_fp, ofstream& out_fp, UserCollection
     pair<string, string> loginUserDetail = _login.login(id, password, userCollection);
 
     if(!loginUserDetail.first.empty() && !loginUserDetail.first.empty())
-    out_fp << "2.1. 로그인\n";
     out_fp << "> " << loginUserDetail.first << " " << loginUserDetail.second << "\n\n";
 }

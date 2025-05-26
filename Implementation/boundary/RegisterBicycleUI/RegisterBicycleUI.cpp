@@ -8,6 +8,15 @@
 RegisterBicycleUI::RegisterBicycleUI(RegisterBicycle& registerBicycle) : _registerBicycle(registerBicycle) {}
 
 /**
+ * @brief 자전거 등록 시작 인터페이스 메시지 출력
+ * 
+ * @param out_fp 자전거 등록 시작을 알리는 메시지를 출력할 스트림
+ */
+void RegisterBicycleUI::startInterface(ofstream& out_fp) {
+    out_fp << "3.1. 자전거 등록\n";
+}
+
+/**
  * @brief 자전거 정보를 입력받아 등록을 요청하고 결과 출력
  * 
  * @param in_fp 자전거 ID 및 제품명을 입력받는 입력 스트림
@@ -20,6 +29,5 @@ void RegisterBicycleUI::inputBicycleInformation(ifstream& in_fp, ofstream& out_f
     in_fp >> id >> productName;
 
     pair<string, string> registeredBicycleInfo = _registerBicycle.registerBicycle(id, productName, userCollection, bicycleCollection);
-    out_fp << "3.1. 자전거 등록\n";
     out_fp << "> " << registeredBicycleInfo.first << " " << registeredBicycleInfo.second << "\n\n";
 }

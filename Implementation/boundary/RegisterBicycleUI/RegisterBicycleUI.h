@@ -13,6 +13,9 @@ private:
 
 public:
     RegisterBicycleUI(RegisterBicycle& registerBicycle);
+
+    void startInterface(ofstream& out_fp);
+
     void inputBicycleInformation(ifstream& in_fp, ofstream& out_fp, UserCollection& userCollection, BicycleCollection& bicycleCollection);
 };
 
