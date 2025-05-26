@@ -1,7 +1,18 @@
 #include "ViewRentalInfoUI.h"
 
+/**
+ * @brief ViewRentalInfoUI 클래스 생성자
+ * 
+ * @param viewRentalInfo 자전거 대여 정보 조회 로직을 처리하는 ViewRentalInfo 객체 참조
+ */
 ViewRentalInfoUI::ViewRentalInfoUI(ViewRentalInfo& viewRentalInfo): _viewRentalInfo(viewRentalInfo) {}
 
+/**
+ * @brief 현재 로그인된 사용자의 자전거 대여 정보를 조회하고 결과 출력
+ * 
+ * @param out_fp 대여 정보 리스트 출력 스트림
+ * @param userCollection 대여 정보를 포함한 사용자 컬렉션
+ */
 void ViewRentalInfoUI::requestViewRentalInfo(ofstream& out_fp, UserCollection& userCollection) {
     out_fp << "5.1. 자전거 대여 리스트\n";
 
