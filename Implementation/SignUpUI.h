@@ -9,6 +9,9 @@
 #include <sstream>
 using namespace std;
 
+/**
+ * @brief 회원가입 UI을 담당하는 클래스
+ */
 class SignUpUI {
 private:
     SignUp& _signup;

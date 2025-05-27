@@ -8,6 +8,9 @@
 #include <algorithm>
 using namespace std;
 
+/**
+ * @brief 자전거 정보조회 UI을 담당하는 클래스
+ */
 class ViewRentalInfoUI {
 private:
     ViewRentalInfo& _viewRentalInfo;

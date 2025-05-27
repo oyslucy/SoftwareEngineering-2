@@ -4,6 +4,9 @@
 #include <string>
 using namespace std;
 
+/**
+ * @brief 자전거 정보를 나타내는 클래스
+ */
 class Bicycle {
 
 private:

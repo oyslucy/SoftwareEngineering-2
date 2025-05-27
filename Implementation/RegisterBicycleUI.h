@@ -7,6 +7,9 @@
 #include <sstream>
 using namespace std;
 
+/**
+ * @brief 자전거 등록 UI를 담당하는 클래스
+ */
 class RegisterBicycleUI {
 private:
     RegisterBicycle& _registerBicycle;

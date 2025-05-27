@@ -6,6 +6,9 @@
 #include <string>
 #include <sstream>
 
+/**
+ * @brief 자전거 대여 UI을 담당하는 클래스
+ */
 class RentalBicycleUI {
 private:
     RentalBicycle& _rentalBicycle;

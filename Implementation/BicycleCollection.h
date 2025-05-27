@@ -6,6 +6,9 @@
 # include <vector>
 using namespace std;
 
+/**
+ * @brief 자전거 객체들을 관리하는 컬렉션 클래스
+ */
 class BicycleCollection {
 private:
     vector<Bicycle*> _bicycle_collection;

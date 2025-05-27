@@ -7,6 +7,9 @@
 #include <sstream>
 using namespace std;
 
+/**
+ * @brief 로그아웃 UI 처리를 담당하는 클래스
+ */
 class LogoutUI {
 private:
     Logout& _logout;

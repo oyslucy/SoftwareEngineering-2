@@ -33,6 +33,12 @@ using namespace std;
 
 void doTask(ifstream& in_fp, ofstream& out_fp);
 
+/**
+ * @brief 공유 자전거 시스템의 메인 함수
+ * 
+ * 입력 파일(input.txt)로부터 명령어를 읽고, 명령어에 따라 사용자 등록, 로그인, 자전거 등록 및 대여 등을 수행한 후
+ * 결과를 출력 파일(output.txt)에 기록한다
+ */
 int main() {
     ifstream in_fp;
     ofstream out_fp;
@@ -46,6 +52,12 @@ int main() {
     return (0);
 }
 
+/**
+ * @brief 입력 파일을 기반으로 명령어를 파싱하고 해당 기능을 수행하는 메인 로직
+ * 
+ * @param in_fp 명령어를 읽어올 입력 스트림
+ * @param out_fp 처리 결과를 기록할 출력 스트림
+ */
 void doTask(ifstream& in_fp, ofstream& out_fp) {
     // properties
     int menu_level_1 = 0, menu_level_2 = 0, is_program_exit = 0;
